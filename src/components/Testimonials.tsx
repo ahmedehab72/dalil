@@ -77,7 +77,7 @@ const Testimonials = () => {
 
         {/* Testimonials Slider */}
         <div className="relative">
-          <div className="bg-card rounded-2xl shadow-soft p-8 md:p-12 border border-border overflow-hidden">
+          <div className="bg-card rounded-xl sm:rounded-2xl shadow-soft p-4 sm:p-8 md:p-12 border border-border overflow-hidden">
             <div className="relative">
               {/* Quote Icon */}
               <div className="absolute -top-4 -left-4 w-16 h-16 opacity-20">
@@ -86,38 +86,38 @@ const Testimonials = () => {
 
               {/* Testimonial Content */}
               <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-                <div className="flex transition-all duration-500" style={{ width: `${testimonials.length * 100}%` }}>
-                  {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="w-full flex-shrink-0 text-center px-4">
+                {testimonials.map((testimonial) => (
+                  <div key={testimonial.id} className="w-full flex-shrink-0 px-2 sm:px-4">
+                    <div className="flex flex-col items-center text-center">
                       {/* Stars */}
-                      <div className="flex justify-center mb-6">
+                      <div className="flex justify-center mb-4 sm:mb-6">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} size={24} className="fill-primary text-primary mx-1" />
+                          <Star key={i} size={20} className="fill-primary text-primary mx-0.5 sm:mx-1" />
                         ))}
                       </div>
 
                       {/* Content */}
-                      <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
+                      <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
                         "{testimonial.content}"
                       </p>
 
                       {/* Author */}
-                      <div className="flex items-center justify-center space-x-4">
+                      <div className="flex flex-col items-center space-y-3 sm:space-y-4">
                         <img
                           src={testimonial.image}
                           alt={testimonial.name}
-                          className="w-16 h-16 rounded-full object-cover"
+                          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover"
                         />
-                        <div className="text-left">
-                          <h4 className="text-lg font-bold text-foreground">{testimonial.name}</h4>
-                          <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                          <p className="text-sm text-primary font-medium">{testimonial.company}</p>
+                        <div className="text-center">
+                          <h4 className="text-base sm:text-lg font-bold text-foreground">{testimonial.name}</h4>
+                          <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.position}</p>
+                          <p className="text-xs sm:text-sm text-primary font-medium">{testimonial.company}</p>
                           <p className="text-xs text-muted-foreground mt-1">{testimonial.project}</p>
                         </div>
                       </div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
