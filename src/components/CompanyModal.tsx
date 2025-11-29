@@ -90,7 +90,7 @@ export default function CompanyModal({ company, onClose }) {
                     ({company.reviews} reviews)
                   </span>
                 </div>
-                <span className="bg-orange-100 text-orange-600 text-sm font-medium px-3 py-1 rounded-full">
+                <span className="bg-[#404e7a] text-white text-sm font-medium px-3 py-1 rounded-full">
                   {company.type}
                 </span>
               </div>
@@ -113,28 +113,28 @@ export default function CompanyModal({ company, onClose }) {
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <Calendar className="w-5 h-5 text-orange-600 mr-3" />
+                  <Calendar className="w-5 h-5 text-[#404e7a] mr-3" />
                   <span>Established {company.yearEstablished}</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-orange-600 mr-3" />
+                  <MapPin className="w-5 h-5 text-[#404e7a] mr-3" />
                   <span>{company.location}</span>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-orange-600 mr-3" />
+                  <Phone className="w-5 h-5 text-[#404e7a] mr-3" />
                   <span>{company.phone}</span>
                 </div>
                 <div className="flex items-center">
-                  <Globe className="w-5 h-5 text-orange-600 mr-3" />
+                  <Globe className="w-5 h-5 text-[#404e7a] mr-3" />
                   <a
                     href={`https://${company.website}`}
-                    className="text-orange-600 hover:underline"
+                    className="text-[#404e7a] hover:underline"
                   >
                     {company.website}
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <Users className="w-5 h-5 text-orange-600 mr-3" />
+                  <Users className="w-5 h-5 text-[#404e7a] mr-3" />
                   <span>{company.size}</span>
                 </div>
               </div>
@@ -230,13 +230,13 @@ export default function CompanyModal({ company, onClose }) {
                 className="flex-1 px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center"
                 style={{
                   background:
-                    "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                    "linear-gradient(135deg, #4d5e99ff 0%, #404e7a 100%)",
                 }}
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </button>
-              <button className="flex-1 px-6 py-3 border-2 border-orange-600 text-orange-600 font-semibold rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300 flex items-center justify-center">
+              <button className="flex-1 px-6 py-3 border-2 border-[#404e7a] text-[#404e7a] font-semibold rounded-lg hover:bg-[#404e7a] hover:text-white transition-all duration-300 flex items-center justify-center">
                 <Globe className="w-5 h-5 mr-2" />
                 Visit Website
               </button>

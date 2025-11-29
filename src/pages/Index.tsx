@@ -39,17 +39,17 @@ const Index = () => {
       <Hero />
       {/* <SearchFilter /> */}
       <FeaturedCompanies setSelectedCompany={setSelectedCompany} />
-      <SearchFilterSection
+      {/* <SearchFilterSection
         searchFilters={searchFilters}
         setSearchFilters={setSearchFilters}
       />
       <CompanyListingsSection
         searchFilters={searchFilters}
         setSelectedCompany={setSelectedCompany}
-      />{" "}
+      />{" "} */}
       <WhyChoose />
       <BlogSection />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <CallToActionSection />
       <Footer />

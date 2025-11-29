@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="gradient-text">Touch</span>
+            Get In <span className="text-[#404e7a]">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Have questions or want to list your construction company? We're here
@@ -50,7 +50,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg shadow-soft">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-start to-primary-end flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#404e7a] from-primary-start to-primary-end flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg shadow-soft">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-start to-primary-end flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#404e7a] from-primary-start to-primary-end flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
@@ -78,15 +78,15 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg shadow-soft">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-start to-primary-end flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#404e7a] from-primary-start to-primary-end flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
                     <p className="text-muted-foreground text-sm">
-                      info@DALIL.com
+                      info@Daleel.com
                       <br />
-                      support@DALIL.com
+                      support@Daleel.com
                     </p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const Contact = () => {
                 />
               </div>
 
-              <Button className="w-full h-12 bg-gradient-to-r from-primary-start to-primary-end hover:opacity-90 text-primary-foreground">
+              <Button className="w-full h-12 bg-[#404e7a] hover:bg-[#404e7a]/80 ">
                 <Send className="w-5 h-5 mr-2" />
                 Send Message
               </Button>

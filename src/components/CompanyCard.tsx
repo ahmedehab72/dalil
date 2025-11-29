@@ -61,14 +61,14 @@ const CompanyCard = ({ company }: CompanyCardProps) => {
           alt={company.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <Badge className="absolute top-4 left-4 bg-gradient-to-r from-primary-start to-primary-end text-primary-foreground border-none">
+        <Badge className="absolute top-4 left-4 bg-[#404e7a] text-primary-foreground border-none">
           {company.type}
         </Badge>
       </div>
 
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2 text-foreground">{company.name}</h3>
-        
+
         <div className="flex items-center gap-1 mb-3">
           <Star className="w-4 h-4 fill-primary text-primary" />
           <span className="font-semibold text-foreground">{company.rating}</span>
@@ -82,7 +82,7 @@ const CompanyCard = ({ company }: CompanyCardProps) => {
           <span>{company.location}</span>
         </div>
 
-        <Button className="w-full bg-gradient-to-r from-primary-start to-primary-end hover:opacity-90 text-primary-foreground group">
+        <Button className="w-full bg-[#404e7a] hover:opacity-90 text-primary-foreground group">
           View Details
           <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
         </Button>

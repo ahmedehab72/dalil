@@ -42,7 +42,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(255, 111, 15, 0.85), rgba(255, 140, 50, 0.75)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(to right, rgba(64, 78, 122, 0.40), rgba(64, 78, 122, 0.30)), url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -54,8 +54,7 @@ const Hero = () => {
             Find Best <span className="block mt-2">Construction Companies</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
-            Your complete guide to construction companies in Kuwait. Connect with trusted builders, contractors, and
-            consultation professionals.
+            The largest online directory to find, compare, and contact construction, contracting, and interior design companies
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
@@ -66,7 +65,7 @@ const Hero = () => {
                 className="pl-10 h-12 bg-card border-none shadow-strong"
               />
             </div>
-            <Button size="lg" className="h-12 bg-card text-primary hover:bg-card/90 shadow-strong">
+            <Button size="lg" className="h-12 bg-card text-[#404e7a] hover:bg-card/90 shadow-strong">
               Discover Companies
             </Button>
           </div>

@@ -54,7 +54,7 @@ const SearchFilter = () => {
               </SelectContent>
             </Select>
 
-            <Button className="h-12 bg-gradient-to-r from-primary-start to-primary-end hover:opacity-90 text-primary-foreground">
+            <Button className="h-12 bg-[#404e7a] hover:opacity-90 text-primary-foreground">
               <SlidersHorizontal className="w-5 h-5 mr-2" />
               Apply Filters
             </Button>

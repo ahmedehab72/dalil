@@ -23,11 +23,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-orange-100"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+        ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-purple-100"
+        : "bg-transparent"
+        }`}
       style={{
         fontFamily:
           'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
@@ -38,16 +37,17 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center"
+              className="w-10 h-10 p-1 rounded-lg flex items-center justify-center"
               style={{
-                background: "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
               }}
             >
-              <Building2 className="w-6 h-6 text-white" />
+              {/* <Building2 className="w-6 h-6 text-white" /> */}
+              <img src="/public/logo.jpg" alt="logo image" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">DALIL</h1>
-              <p className="text-xs text-gray-600">Construction Directory</p>
+              <h1 className="text-xl font-bold text-[#404e7a]">DALEEL</h1>
+              <p className="text-xs text-[#404e7a]">Construction Directory</p>
             </div>
           </div>
 
@@ -57,11 +57,10 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  item.active
-                    ? "text-orange-600"
-                    : "text-gray-700 hover:text-orange-600"
-                }`}
+                className={`text-sm font-medium transition-colors duration-200 ${item.active
+                  ? "text-[#404e7a]"
+                  : "text-gray-700 hover:text-[#404e7a]"
+                  }`}
               >
                 {item.name}
               </a>
@@ -73,7 +72,7 @@ export default function Header() {
             <button
               className="px-6 py-2.5 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
               style={{
-                background: "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                background: "linear-gradient(135deg, #404e7a 0%, #4d5e99ff 100%)",
               }}
             >
               List Your Company
@@ -97,11 +96,10 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors duration-200 ${
-                    item.active
-                      ? "text-orange-600"
-                      : "text-gray-700 hover:text-orange-600"
-                  }`}
+                  className={`text-sm font-medium transition-colors duration-200 ${item.active
+                    ? "text-[#404e7a]"
+                    : "text-gray-700 hover:text-[#404e7a]"
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -111,7 +109,7 @@ export default function Header() {
                 className="self-start px-6 py-2.5 text-white font-medium rounded-lg transition-all duration-200"
                 style={{
                   background:
-                    "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                    "linear-gradient(135deg, #404e7a 0%, #404e7a 100%)",
                 }}
               >
                 List Your Company

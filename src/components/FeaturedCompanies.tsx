@@ -84,14 +84,14 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
               className="text-transparent bg-clip-text ml-3"
               style={{
                 backgroundImage:
-                  "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                  "linear-gradient(135deg, #4d5e99ff 0%, #404e7a 100%)",
               }}
             >
               Companies
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover Dalil's most trusted and experienced construction
+            Discover Daleel's most trusted and experienced construction
             companies
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
           {featuredCompanies.map((company) => (
             <div
               key={company.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer overflow-hidden border border-orange-100 group"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer overflow-hidden border border-purple-100 group"
               onClick={() => setSelectedCompany(company)}
             >
               {/* Company Logo */}
@@ -111,10 +111,10 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
                   alt={company.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute inset-0 bg-[#404e7a]/40" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center justify-between text-white">
-                    <span className="text-sm font-medium bg-orange-600 px-3 py-1 rounded-full">
+                    <span className="text-sm font-medium bg-[#404e7a] px-3 py-1 rounded-full">
                       {company.type}
                     </span>
                     <div className="flex items-center">
@@ -129,7 +129,7 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
 
               {/* Company Info */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-200">
+                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#404e7a] transition-colors duration-200">
                   {company.name}
                 </h3>
 
@@ -146,7 +146,7 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
                   <div className="text-sm text-gray-500">
                     {company.reviews} reviews
                   </div>
-                  <div className="flex items-center text-orange-600 font-semibold text-sm group-hover:text-orange-700">
+                  <div className="flex items-center text-[#404e7a] font-semibold text-sm group-hover:text-[#404e7as]">
                     <span className="mr-1">View Details</span>
                     <ArrowRight
                       size={16}
@@ -161,7 +161,7 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="px-8 py-4 border-2 border-orange-600 text-orange-600 font-semibold rounded-xl hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+          <button className="px-8 py-4 border-2 border-[#404e7a] text-[#404e7a] font-semibold rounded-xl hover:bg-[#404e7a] hover:text-white transition-all duration-300 transform hover:-translate-y-1">
             View All Companies
           </button>
         </div>

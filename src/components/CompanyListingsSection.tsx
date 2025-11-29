@@ -105,9 +105,8 @@ export default function CompanyListingsSection({
 
   const CompanyCard = ({ company, isGridView }) => (
     <div
-      className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border border-orange-100 group ${
-        isGridView ? "p-6" : "p-4 flex items-center space-x-6"
-      }`}
+      className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border border-purple-100 group ${isGridView ? "p-6" : "p-4 flex items-center space-x-6"
+        }`}
       onClick={() => setSelectedCompany(company)}
     >
       {/* Logo */}
@@ -123,14 +122,14 @@ export default function CompanyListingsSection({
 
       {/* Company Info */}
       <div className={`${isGridView ? "text-center" : "flex-1"}`}>
-        <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-200">
+        <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-[#404e7a] transition-colors duration-200">
           {company.name}
         </h3>
 
         <div
           className={`${isGridView ? "mb-3" : "flex items-center space-x-4 mb-2"}`}
         >
-          <span className="inline-block bg-orange-100 text-orange-600 text-xs font-medium px-3 py-1 rounded-full mb-2">
+          <span className="inline-block bg-[#404e7a] text-[#404e7a] text-xs font-medium px-3 py-1 rounded-full mb-2">
             {company.type}
           </span>
 
@@ -191,7 +190,7 @@ export default function CompanyListingsSection({
                 className="text-transparent bg-clip-text ml-3"
                 style={{
                   backgroundImage:
-                    "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                    "linear-gradient(135deg, #4d5e99ff 0%, #404e7a 100%)",
                 }}
               >
                 Companies
@@ -206,21 +205,19 @@ export default function CompanyListingsSection({
           <div className="flex items-center space-x-2 bg-gray-100 rounded-lg p-1">
             <button
               onClick={() => setViewMode("grid")}
-              className={`p-2 rounded-md transition-all duration-200 ${
-                viewMode === "grid"
-                  ? "bg-orange-600 text-white shadow-md"
-                  : "text-gray-600 hover:text-orange-600"
-              }`}
+              className={`p-2 rounded-md transition-all duration-200 ${viewMode === "grid"
+                ? "bg-[#404e7a] text-white shadow-md"
+                : "text-gray-600 hover:text-[#404e7a]"
+                }`}
             >
               <Grid3X3 size={20} />
             </button>
             <button
               onClick={() => setViewMode("list")}
-              className={`p-2 rounded-md transition-all duration-200 ${
-                viewMode === "list"
-                  ? "bg-orange-600 text-white shadow-md"
-                  : "text-gray-600 hover:text-orange-600"
-              }`}
+              className={`p-2 rounded-md transition-all duration-200 ${viewMode === "list"
+                ? "bg-[#404e7a] text-white shadow-md"
+                : "text-gray-600 hover:text-[#404e7a]"
+                }`}
             >
               <List size={20} />
             </button>
@@ -262,7 +259,7 @@ export default function CompanyListingsSection({
         {/* Load More */}
         {filteredCompanies.length > 0 && (
           <div className="text-center mt-12">
-            <button className="px-8 py-3 text-orange-600 font-semibold border-2 border-orange-600 rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300">
+            <button className="px-8 py-3 text-[#404e7a] font-semibold border-2 border-[#404e7a] rounded-lg hover:bg-[#404e7a] hover:text-white transition-all duration-300">
               Load More Companies
             </button>
           </div>

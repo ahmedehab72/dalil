@@ -17,7 +17,7 @@ export default function BlogSection() {
       id: 2,
       title: "2024 Construction Industry Trends in Kuwait",
       excerpt:
-        "Discover the latest trends shaping Dalil's construction landscape, from sustainable building to smart technologies.",
+        "Discover the latest trends shaping Daleel's construction landscape, from sustainable building to smart technologies.",
       image:
         "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&h=400&q=80",
       author: "Sara Al-Mansouri",
@@ -54,14 +54,14 @@ export default function BlogSection() {
               className="text-transparent bg-clip-text ml-3"
               style={{
                 backgroundImage:
-                  "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                  "linear-gradient(135deg, #4d5e99ff 0%, #404e7a 100%)",
               }}
             >
               Insights
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Stay updated with the latest news, tips, and insights from Dalil's
+            Stay updated with the latest news, tips, and insights from Daleel's
             construction industry
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function BlogSection() {
           {blogPosts.map((post) => (
             <article
               key={post.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-orange-100 group cursor-pointer"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-purple-100 group cursor-pointer"
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
@@ -81,7 +81,7 @@ export default function BlogSection() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-orange-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  <span className="bg-[#404e7a] text-white text-xs font-medium px-3 py-1 rounded-full">
                     {post.category}
                   </span>
                 </div>
@@ -89,7 +89,7 @@ export default function BlogSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-orange-600 transition-colors duration-200 line-clamp-2">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#404e7a] transition-colors duration-200 line-clamp-2">
                   {post.title}
                 </h3>
 
@@ -110,7 +110,7 @@ export default function BlogSection() {
                 </div>
 
                 {/* Read More */}
-                <div className="flex items-center text-orange-600 font-semibold group-hover:text-orange-700">
+                <div className="flex items-center text-[#404e7a] font-semibold group-hover:text-[#404e7as]">
                   <span className="mr-1">Read More</span>
                   <ArrowRight
                     size={16}
@@ -124,7 +124,7 @@ export default function BlogSection() {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="px-8 py-4 border-2 border-orange-600 text-orange-600 font-semibold rounded-xl hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+          <button className="px-8 py-4 border-2 border-[#404e7a] text-[#404e7a] font-semibold rounded-xl hover:bg-[#404e7a] hover:text-white transition-all duration-300 transform hover:-translate-y-1">
             View All Articles
           </button>
         </div>

@@ -20,9 +20,9 @@ export default function CallToActionSection() {
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(circle at 20% 50%, rgba(249, 115, 22, 0.8) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.6) 0%, transparent 50%),
-            linear-gradient(135deg, #f97316 0%, #ea580c 100%)
+            radial-gradient(circle at 20% 50%, #4d5e99ff 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, #4d5e99ff 0%, transparent 50%),
+            linear-gradient(135deg, #4d5e99ff 0%, #404e7a 100%)
           `,
         }}
       />
@@ -50,12 +50,12 @@ export default function CallToActionSection() {
           >
             Ready to Start Your
             <br />
-            <span className="text-yellow-300">Construction</span>
+            <span className="text-gray-300">Construction</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-orange-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Join thousands of satisfied clients who found their perfect
-            construction partner through DALIL. Start your journey today!
+            construction partner through Daleel. Start your journey today!
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export default function CallToActionSection() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
           <button
             onClick={handleSearchClick}
-            className="group px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl flex items-center justify-center space-x-3 min-w-[250px]"
+            className="group px-8 py-4 bg-white text-[#404e7a] font-bold rounded-xl  transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl flex items-center justify-center space-x-3 min-w-[250px]"
           >
             <Search size={24} />
             <span>Find Companies Now</span>
@@ -75,7 +75,7 @@ export default function CallToActionSection() {
 
           <button
             onClick={handleContactClick}
-            className="group px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-orange-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl flex items-center justify-center space-x-3 min-w-[250px]"
+            className="group px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#404e7a] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl flex items-center justify-center space-x-3 min-w-[250px]"
           >
             <Building2 size={24} />
             <span>List Your Company</span>
@@ -92,7 +92,7 @@ export default function CallToActionSection() {
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">
               500+
             </div>
-            <div className="text-orange-100 text-sm md:text-base">
+            <div className="text-purple-100 text-sm md:text-base">
               Verified Companies
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function CallToActionSection() {
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">
               2,000+
             </div>
-            <div className="text-orange-100 text-sm md:text-base">
+            <div className="text-purple-100 text-sm md:text-base">
               Projects Completed
             </div>
           </div>
@@ -108,16 +108,16 @@ export default function CallToActionSection() {
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">
               50,000+
             </div>
-            <div className="text-orange-100 text-sm md:text-base">
+            <div className="text-purple-100 text-sm md:text-base">
               Happy Clients
             </div>
           </div>
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 pt-8 border-t border-orange-300/30">
-          <p className="text-orange-100 mb-6 text-lg">
-            Trusted by Dalil's leading construction professionals
+        <div className="mt-16 pt-8 border-t border-purple-300/30">
+          <p className="text-purple-100 mb-6 text-lg">
+            Trusted by Daleel's leading construction professionals
           </p>
 
           {/* Logo placeholders */}

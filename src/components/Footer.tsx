@@ -24,19 +24,20 @@ export default function Footer() {
                 className="w-12 h-12 rounded-lg flex items-center justify-center"
                 style={{
                   background:
-                    "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                    "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
                 }}
               >
-                <Building2 className="w-7 h-7 text-white" />
+                {/* <Building2 className="w-7 h-7 text-white" /> */}
+                <img src="/public/logo.jpg" alt="logo" className="w-7 h-7" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">DALIL</h3>
+                <h3 className="text-2xl font-bold">Daleel</h3>
                 <p className="text-gray-400 text-sm">Construction Directory</p>
               </div>
             </div>
 
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Dalil's premier platform for connecting clients with verified
+              Daleel's premier platform for connecting clients with verified
               construction companies. We make finding trusted construction
               partners simple and reliable.
             </p>
@@ -44,19 +45,19 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <MapPin size={18} className="text-orange-500 flex-shrink-0" />
+                <MapPin size={18} className="text-[#404e7a] flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
                   Kuwait City, Al-Salmiya, Block 4, Building 25
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={18} className="text-orange-500 flex-shrink-0" />
+                <Phone size={18} className="text-[#404e7a] flex-shrink-0" />
                 <span className="text-gray-300 text-sm">+965 2234 5678</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={18} className="text-orange-500 flex-shrink-0" />
+                <Mail size={18} className="text-[#404e7a] flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  info@DALIL.com
+                  info@Daleel.com
                 </span>
               </div>
             </div>
@@ -69,7 +70,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#hero"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Home
                 </a>
@@ -77,7 +78,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#about"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   About Us
                 </a>
@@ -85,7 +86,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#companies"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Companies
                 </a>
@@ -93,7 +94,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#blog"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Blog
                 </a>
@@ -101,7 +102,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Contact
                 </a>
@@ -109,7 +110,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   List Your Company
                 </a>
@@ -124,7 +125,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Company Verification
                 </a>
@@ -132,7 +133,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Project Matching
                 </a>
@@ -140,7 +141,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Quality Assurance
                 </a>
@@ -148,7 +149,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Expert Reviews
                 </a>
@@ -156,7 +157,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Construction Insights
                 </a>
@@ -164,7 +165,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-[#404e7a] transition-colors duration-200 text-sm"
                 >
                   Industry News
                 </a>
@@ -185,13 +186,13 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all duration-200 text-white placeholder-gray-400"
+                className="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#404e7a] focus:border-transparent outline-none transition-all duration-200 text-white placeholder-gray-400"
               />
               <button
                 className="px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5"
                 style={{
                   background:
-                    "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+                    "linear-gradient(135deg, #4d5e99ff 0%, #404e7a 100%)",
                 }}
               >
                 Subscribe
@@ -205,17 +206,17 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Copyright */}
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} DALIL. All rights reserved. |
+              © {currentYear} Daleel. All rights reserved. |
               <a
                 href="#"
-                className="hover:text-orange-500 transition-colors duration-200 ml-1"
+                className="hover:text-[#404e7a] transition-colors duration-200 ml-1"
               >
                 Privacy Policy
               </a>{" "}
               |
               <a
                 href="#"
-                className="hover:text-orange-500 transition-colors duration-200 ml-1"
+                className="hover:text-[#404e7a] transition-colors duration-200 ml-1"
               >
                 Terms of Service
               </a>
@@ -225,25 +226,25 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-all duration-200 transform hover:-translate-y-1"
+                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-[#404e7a] transition-all duration-200 transform hover:-translate-y-1"
               >
                 <Facebook size={18} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-all duration-200 transform hover:-translate-y-1"
+                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-[#404e7a] transition-all duration-200 transform hover:-translate-y-1"
               >
                 <Twitter size={18} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-all duration-200 transform hover:-translate-y-1"
+                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-[#404e7a] transition-all duration-200 transform hover:-translate-y-1"
               >
                 <Instagram size={18} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-all duration-200 transform hover:-translate-y-1"
+                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-[#404e7a] transition-all duration-200 transform hover:-translate-y-1"
               >
                 <Linkedin size={18} />
               </a>

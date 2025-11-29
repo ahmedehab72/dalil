@@ -96,7 +96,7 @@ export const blogPosts = [
   {
     id: 2,
     title: "2024 Construction Industry Trends in Kuwait",
-    excerpt: "Discover the latest industry shaping Dalil's construction landscape, from sustainable building to smart technologies.",
+    excerpt: "Discover the latest industry shaping Daleel's construction landscape, from sustainable building to smart technologies.",
     date: "March 10, 2024",
     author: "Sarah Al-Ahmad",
     readTime: "7 min",

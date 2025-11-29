@@ -12,7 +12,7 @@ const Testimonials = () => {
       company: "Al-Kharafi Group",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80",
       rating: 5,
-      content: "DALIL helped us find the perfect construction partner for our commercial project. The platform's verification process gave us confidence in our choice.",
+      content: "Daleel helped us find the perfect construction partner for our commercial project. The platform's verification process gave us confidence in our choice.",
       project: "Kuwait City Shopping Complex",
     },
     {
@@ -71,7 +71,7 @@ const Testimonials = () => {
             Client <span className="gradient-text">Testimonials</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hear what our satisfied clients say about their experience with DALIL
+            Hear what our satisfied clients say about their experience with Daleel
           </p>
         </div>
 
