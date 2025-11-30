@@ -34,10 +34,10 @@ export default function SearchFilterSection({
   };
 
   return (
-    <section id="search-section" className="pt-12 px-6">
+    <section id="search-section" className="pt-32 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Search Bar */}
-        <div className="bg-white rounded-2xl shadow-xl p-6 mb-8 border border-purple-100">
+        <div className="p-6 ">
           <div className="relative">
             <Search
               className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"

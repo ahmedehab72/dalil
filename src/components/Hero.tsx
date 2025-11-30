@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import gsap from "gsap";
 import heroImage from "@/assets/hero-construction.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const iconsRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
-
+const navigate = useNavigate();
   const icons = [
     { Icon: Building2, label: "Buildings" },
     { Icon: Hammer, label: "Construction" },
@@ -61,11 +62,11 @@ const Hero = () => {
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <Input
-                placeholder="Search for construction companies, services, or projects..."
-                className="pl-10 h-12 bg-card border-none shadow-strong"
+                placeholder="Search text-black for construction companies, services, or projects..."
+                className="pl-10 h-12 bg-card border-none shadow-strong text-black"
               />
             </div>
-            <Button size="lg" className="h-12 bg-card text-[#404e7a] hover:bg-card/90 shadow-strong">
+            <Button onClick={()=>navigate("/companies")} size="lg" className="h-12 bg-card text-[#404e7a] hover:bg-card/90 shadow-strong">
               Discover Companies
             </Button>
           </div>
@@ -76,7 +77,7 @@ const Hero = () => {
             {[...icons, ...icons].map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center gap-2 min-w-[100px] text-primary-foreground/80"
+                className="flex flex-col items-center gap-2 min-w-[100px] text-[#404e7a]"
               >
                 <div className="w-16 h-16 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center border border-primary-foreground/20">
                   <item.Icon className="w-8 h-8" />

@@ -28,7 +28,7 @@ export default function Footer() {
                 }}
               >
                 {/* <Building2 className="w-7 h-7 text-white" /> */}
-                <img src="/public/logo.jpg" alt="logo" className="w-7 h-7" />
+                <img src="/logoImage.jpg" alt="logo" className="w-7 h-7" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Daleel</h3>
@@ -41,30 +41,26 @@ export default function Footer() {
               construction companies. We make finding trusted construction
               partners simple and reliable.
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin size={18} className="text-[#404e7a] flex-shrink-0" />
-                <span className="text-gray-300 text-sm">
-                  Kuwait City, Al-Salmiya, Block 4, Building 25
-                </span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone size={18} className="text-[#404e7a] flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+965 2234 5678</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail size={18} className="text-[#404e7a] flex-shrink-0" />
-                <span className="text-gray-300 text-sm">
-                  info@Daleel.com
-                </span>
-              </div>
+          </div>
+          {/* Contact Info */}
+          <div className="space-y-3">
+            <div className="flex items-center space-x-3">
+              <MapPin size={18} className="text-[#404e7a] flex-shrink-0" />
+              <span className="text-gray-300 text-sm">
+                Kuwait City, Al-Salmiya, Block 4, Building 25
+              </span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Phone size={18} className="text-[#404e7a] flex-shrink-0" />
+              <span className="text-gray-300 text-sm">+965 2234 5678</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Mail size={18} className="text-[#404e7a] flex-shrink-0" />
+              <span className="text-gray-300 text-sm">info@Daleel.com</span>
             </div>
           </div>
-
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
@@ -116,10 +112,10 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
               <li>
@@ -171,11 +167,11 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-gray-800 rounded-2xl p-8 mb-12">
+        {/* <div className="bg-gray-800 rounded-2xl p-8 mb-12">
           <div className="text-center max-w-2xl mx-auto">
             <h4 className="text-2xl font-bold mb-4">Stay Updated</h4>
             <p className="text-gray-300 mb-6">
@@ -199,7 +195,7 @@ export default function Footer() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-700 pt-8">

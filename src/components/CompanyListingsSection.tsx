@@ -111,7 +111,7 @@ export default function CompanyListingsSection({
     >
       {/* Logo */}
       <div
-        className={`${isGridView ? "w-16 h-16 mb-4 mx-auto" : "w-20 h-20 flex-shrink-0"} overflow-hidden rounded-lg`}
+        className={`${isGridView ? "w-full h-[250px] mb-4 mx-auto" : "w-20 h-20 flex-shrink-0"} overflow-hidden rounded-lg`}
       >
         <img
           src={company.logo}
@@ -123,14 +123,14 @@ export default function CompanyListingsSection({
       {/* Company Info */}
       <div className={`${isGridView ? "text-center" : "flex-1"}`}>
         <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-[#404e7a] transition-colors duration-200">
-          {company.name}
+          {company?.name}
         </h3>
 
         <div
           className={`${isGridView ? "mb-3" : "flex items-center space-x-4 mb-2"}`}
         >
-          <span className="inline-block bg-[#404e7a] text-[#404e7a] text-xs font-medium px-3 py-1 rounded-full mb-2">
-            {company.type}
+          <span className="inline-block bg-[#404e7a] text-white text-xs font-medium px-3 py-1 rounded-full mb-2">
+            {company?.type}
           </span>
 
           <div className="flex items-center text-gray-600 text-sm">

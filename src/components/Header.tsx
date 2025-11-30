@@ -14,11 +14,11 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#hero", active: true },
-    { name: "Companies", href: "#companies", active: false },
-    { name: "About", href: "#about", active: false },
-    { name: "Blog", href: "#blog", active: false },
-    { name: "Contact", href: "#contact", active: false },
+    { name: "Home", href: "/", active: true },
+    { name: "Companies", href: "/companies", active: false },
+    // { name: "About", href: "#about", active: false },
+    // { name: "Blog", href: "#blog", active: false },
+    { name: "Contact", href: "/contact", active: false },
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Header() {
               }}
             >
               {/* <Building2 className="w-6 h-6 text-white" /> */}
-              <img src="/public/logo.jpg" alt="logo image" />
+              <img src="/logoImage.jpg" alt="logo image" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-[#404e7a]">DALEEL</h1>

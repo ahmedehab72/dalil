@@ -35,7 +35,6 @@ const Index = () => {
           `,
         }}
       />
-      <Header />
       <Hero />
       {/* <SearchFilter /> */}
       <FeaturedCompanies setSelectedCompany={setSelectedCompany} />
@@ -50,9 +49,7 @@ const Index = () => {
       <WhyChoose />
       <BlogSection />
       {/* <Testimonials /> */}
-      <Contact />
       <CallToActionSection />
-      <Footer />
       {/* Company Details Modal */}
       {selectedCompany && (
         <CompanyModal

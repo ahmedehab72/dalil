@@ -68,7 +68,7 @@ export default function FeaturedCompanies({ setSelectedCompany }) {
   ];
 
   return (
-    <section className="py-16 px-6">
+    <section id="featuresCompany" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">

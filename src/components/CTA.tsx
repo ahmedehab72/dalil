@@ -1,16 +1,20 @@
 import { Search, Building2, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function CallToActionSection() {
+  const navigate = useNavigate()
   const handleSearchClick = () => {
     document.getElementById("search-section")?.scrollIntoView({
       behavior: "smooth",
     });
+    navigate('/companies')
   };
 
   const handleContactClick = () => {
     document.getElementById("contact")?.scrollIntoView({
       behavior: "smooth",
     });
+    navigate('/contact')
   };
 
   return (
@@ -78,7 +82,7 @@ export default function CallToActionSection() {
             className="group px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#404e7a] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl flex items-center justify-center space-x-3 min-w-[250px]"
           >
             <Building2 size={24} />
-            <span>List Your Company</span>
+            <span>Our Contact Us</span>
             <ArrowRight
               size={20}
               className="group-hover:translate-x-1 transition-transform duration-200"
