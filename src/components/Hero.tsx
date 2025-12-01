@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import heroImage from "@/assets/heroImage2.jpg";
 import { useNavigate } from "react-router-dom";
-import SliderIcons from "./sliderIcons";
+import SliderIcons from "./SlideIcons";
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);

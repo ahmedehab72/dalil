@@ -12,7 +12,7 @@ import CompanyListingsSection from "@/components/CompanyListingsSection";
 import SearchFilterSection from "@/components/SearchFilterSection";
 import BlogSection from "@/components/Blog";
 import CallToActionSection from "@/components/CTA";
-import SliderIcons from "@/components/sliderIcons";
+import SliderIcons from "@/components/SlideIcons";
 
 const Index = () => {
   const [selectedCompany, setSelectedCompany] = useState(null);
