@@ -193,7 +193,7 @@ export default function CompanyModal({ company, onClose }) {
           </div>
 
           {/* Reviews */}
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Customer Reviews</h3>
             <div className="space-y-4">
               {sampleReviews.map((review) => (
@@ -221,10 +221,10 @@ export default function CompanyModal({ company, onClose }) {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Contact Actions */}
-          <div className="border-t border-gray-200 pt-6">
+          {/* <div className="border-t border-gray-200 pt-6">
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 className="flex-1 px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center"
@@ -244,7 +244,7 @@ export default function CompanyModal({ company, onClose }) {
                 Request Quote
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

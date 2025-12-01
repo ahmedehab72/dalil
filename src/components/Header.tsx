@@ -23,10 +23,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-        ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-purple-100"
-        : "bg-transparent"
-        }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white backdrop-blur-md shadow-lg border-b border-purple-100"
+          : "bg-white"
+      }`}
       style={{
         fontFamily:
           'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
@@ -34,10 +35,38 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center space-x-4">
+            <button
+              className="px-6 py-2.5 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
+              style={{
+                background:
+                  "linear-gradient(135deg, #404e7a 0%, #4d5e99ff 100%)",
+              }}
+            >
+              List Your Company
+            </button>
+          </div>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={`text-md font-medium transition-colors duration-200 ${
+                  item.active
+                    ? "text-[#404e7a]"
+                    : "text-gray-700 hover:text-[#404e7a]"
+                }`}
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+            {/* logo */}
           <div className="flex items-center space-x-3">
             <div
-              className="w-10 h-10 p-1 rounded-lg flex items-center justify-center"
+              className="w-22 h-10 p-1 rounded-lg flex items-center justify-center"
               style={{
                 background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
               }}
@@ -46,39 +75,10 @@ export default function Header() {
               <img src="/logoImage.jpg" alt="logo image" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-[#404e7a]">DALEEL</h1>
-              <p className="text-xs text-[#404e7a]">Construction Directory</p>
+              {/* <h1 className="text-xl font-bold text-[#404e7a]">DALEEL</h1> */}
+              {/* <p className="text-xs text-[#404e7a]">Construction Directory</p> */}
             </div>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={`text-sm font-medium transition-colors duration-200 ${item.active
-                  ? "text-[#404e7a]"
-                  : "text-gray-700 hover:text-[#404e7a]"
-                  }`}
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button
-              className="px-6 py-2.5 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
-              style={{
-                background: "linear-gradient(135deg, #404e7a 0%, #4d5e99ff 100%)",
-              }}
-            >
-              List Your Company
-            </button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-gray-700"
@@ -96,10 +96,11 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors duration-200 ${item.active
-                    ? "text-[#404e7a]"
-                    : "text-gray-700 hover:text-[#404e7a]"
-                    }`}
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    item.active
+                      ? "text-[#404e7a]"
+                      : "text-gray-700 hover:text-[#404e7a]"
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

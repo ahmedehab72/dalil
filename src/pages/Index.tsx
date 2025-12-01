@@ -12,6 +12,7 @@ import CompanyListingsSection from "@/components/CompanyListingsSection";
 import SearchFilterSection from "@/components/SearchFilterSection";
 import BlogSection from "@/components/Blog";
 import CallToActionSection from "@/components/CTA";
+import SliderIcons from "@/components/sliderIcons";
 
 const Index = () => {
   const [selectedCompany, setSelectedCompany] = useState(null);
@@ -28,14 +29,15 @@ const Index = () => {
         className="fixed inset-0 -z-10"
         style={{
           background: `
-            radial-gradient(circle at 20% 50%, rgba(251, 146, 60, 0.2) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 40% 80%, rgba(234, 88, 12, 0.1) 0%, transparent 50%),
-            linear-gradient(135deg, #fff 0%, #fefbf4 100%)
+          linear-gradient(135deg, #fff 0%, #ffff 100%)
           `,
         }}
+        // radial-gradient(circle at 20% 50%, rgba(251, 146, 60, 0.2) 0%, transparent 50%),
+        // radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
+        // radial-gradient(circle at 40% 80%, rgba(234, 88, 12, 0.1) 0%, transparent 50%),
       />
       <Hero />
+      {/* <SliderIcons /> */}
       {/* <SearchFilter /> */}
       <FeaturedCompanies setSelectedCompany={setSelectedCompany} />
       {/* <SearchFilterSection
