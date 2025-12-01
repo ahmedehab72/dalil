@@ -13,6 +13,8 @@ import SearchFilterSection from "@/components/SearchFilterSection";
 import BlogSection from "@/components/Blog";
 import CallToActionSection from "@/components/CTA";
 import SliderIcons from "@/components/SlideIcons";
+import InDemandServicesAccordion from "@/components/InDemandServices";
+import FullWidthSlider from "@/components/ImageSlider";
 
 const Index = () => {
   const [selectedCompany, setSelectedCompany] = useState(null);
@@ -49,7 +51,9 @@ const Index = () => {
         setSelectedCompany={setSelectedCompany}
       />{" "} */}
       <WhyChoose />
-      <BlogSection />
+      {/* <BlogSection /> */}
+      <InDemandServicesAccordion/>
+      <FullWidthSlider />
       {/* <Testimonials /> */}
       <CallToActionSection />
       {/* Company Details Modal */}
