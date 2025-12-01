@@ -1,15 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import {
   Search,
-  Building2,
-  Hammer,
-  HardHat,
-  Wrench,
-  Ruler,
-  PaintBucket,
-  Home,
-  Building,
-  Factory,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
